@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background: #020617;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Sections */
+
+section {
+    min-height: 70vh;
+    padding: 80px 50px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+/* Home */
+
+#home {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+#home p {
+    font-size: 21px;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+/* Button */
+
+.main-button {
+    display: inline-block;
+    background: #38bdf8;
+    color: #020617;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-button:hover {
+    background: white;
+}
+
+/* About */
+
+#about p {
+    max-width: 700px;
+    margin: auto;
+    color: #cbd5e1;
+    font-size: 18px;
+}
+
+/* Skills */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: #1e293b;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+/* Projects */
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: #1e293b;
+    width: 270px;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card h3 {
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.project-card p {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    color: white;
+}
+
+/* GitHub */
+
+#github p {
+    color: #cbd5e1;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Footer */
+
+footer {
+    background: #020617;
+    text-align: center;
+    padding: 25px;
+    color: #94a3b8;
+}
+/* Contact */
+
+#contact p {
+    color: #cbd5e1;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-links a {
+    display: inline-block;
+    background: #1e293b;
+    color: #38bdf8;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-links a:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    #home h2 {
+        font-size: 35px;
+    }
+
+    #home p {
+        font-size: 17px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Home Improvements */
+
+#home .hello {
+    color: #38bdf8;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+#home h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+#home h3 {
+    font-size: 22px;
+    font-weight: normal;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+#home .intro {
+    color: #94a3b8;
+    font-size: 18px;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.github-button {
+    display: inline-block;
+    background: #1e293b;
+    color: #38bdf8;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.github-button:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+/* Better Project Cards */
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #334155;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+    color: white;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 8px 15px;
+    border-radius: 6px;
+    background: #020617;
+}
+
+.project-card a:hover {
+    background: #38bdf8;
+    color: #020617;
+}
+/* Profile Photo */
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    border: 3px solid #38bdf8;
+}
+/* LinkedIn Button */
+
+.linkedin-button {
+    display: inline-block;
+    background: #1e293b;
+    color: #38bdf8;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.linkedin-button:hover {
+    background: #38bdf8;
+    color: #020617;
+}
