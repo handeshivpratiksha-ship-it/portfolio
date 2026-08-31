@@ -367,3 +367,20 @@ footer {
     background: #38bdf8;
     color: #020617;
 }
+/* Project Section */
+
+#projects {
+    background: #111827;
+}
+
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-card a {
+    transition: all 0.3s ease;
+}
